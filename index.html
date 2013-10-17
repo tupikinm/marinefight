@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Морской бой</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/index.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+<div id="gradient">
+	<div id="container">
+<!-- блок для вывода диалогов -->
+<div id="opacity-block"></div>
+<div id="ualert">
+	<div class="title">Настройки</div>
+	<div class="row">
+		<div>
+			<input type="checkbox" name="show-ships" id="show-ships" checked>
+		</div>
+		<div>
+			<label for="show-ships">показывать корабли</label>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<input type="checkbox" name="show-stats" id="show-stats" checked>
+		</div>
+		<div>
+			<label for="show-stats">показывать статистику</label>
+		</div>
+	</div>
+	<div class="row">
+		<button id="start">Начать игру</button>
+	</div>
+</div>
+
+		<div id="title">М<span id="o"></span>рской бой</div>
+		<div id="field" class="block">
+			<div id="grid">
+				<div id="topline">
+					<div class="cell">1</div>
+					<div class="cell">2</div>
+					<div class="cell">3</div>
+					<div class="cell">4</div>
+					<div class="cell">5</div>
+					<div class="cell">6</div>
+					<div class="cell">7</div>
+					<div class="cell">8</div>
+					<div class="cell">9</div>
+					<div class="cell">10</div>
+				</div>
+				<div id="leftline">
+					<div class="cell">А</div>
+					<div class="cell">Б</div>
+					<div class="cell">В</div>
+					<div class="cell">Г</div>
+					<div class="cell">Д</div>
+					<div class="cell">Е</div>
+					<div class="cell">Ж</div>
+					<div class="cell">З</div>
+					<div class="cell">Д</div>
+					<div class="cell">И</div>
+				</div>
+				<div id="border"></div>
+			</div>
+		</div>
+		<div id="statistic" class="block">
+			<div id="rows">
+				<div class="row">Статистика</div>
+				<div class="row" id="total"><span>Выстрелов всего:</span><span>0</span></div>
+				<div class="row" id="shots"><span>Попаданий всего:</span><span>0</span></div>
+				<div class="row" id="hits"><span>Ранений:</span><span>0</span></div>
+				<div class="row" id="kills"><span>Потоплено кораблей:</span><span>0</span></div>
+			</div>
+		</div>
+		<div id="finish">Все корабли потоплены. Начать заново?</div>
+	</div>
+</div>
+</body>
+</html>
